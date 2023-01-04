@@ -89,3 +89,89 @@
 	background-color: #2b2b31;
 	border: none;
 }
+
+.line-space {
+	border-bottom: #df507a 2px solid;
+	/* border-top: #df507a 2px solid; */
+}
+
+.ticket-chose-item {
+	padding: 30px 0;
+}
+
+.tilte-chose-ticket h3 {
+	font-weight: bold;
+	color: white;
+}
+
+.city-item > label {
+	width: fit-content;
+	line-height: 50px;
+	padding: 0 20px;
+	border-radius: 10px;
+	color: white;
+	cursor: pointer;
+	transition: 0.2s;
+	user-select: none;
+}
+.city-item > label input {
+	display: none;
+}
+.city-item > label.active {
+	background-color: #df507a;
+}
+
+.room-ticket-item {
+	border-bottom: #df507a 0.5px solid;
+}
+.room-ticket-item h5 {
+	color: white;
+	font-weight: 400;
+}
+.time-room-list label {
+	width: fit-content;
+	padding: 5px 10px;
+	border-radius: 2px;
+	color: white;
+	cursor: pointer;
+	user-select: none;
+	margin-left: 20px;
+	border: 1px solid white;
+}
+.time-room-list label input {
+	display: none;
+}
+.time-room-list label.active {
+	background-color: #df507a;
+}
+
+.title-ticket-date-item {
+	color: white;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.title-ticket-date-item > div {
+	font-size: 14px;
+}
+.title-ticket-date-item h4 {
+	margin-left: 10px;
+	font-size: 36px;
+}
+
+.ticket-date label input {
+	display: none;
+}
+.ticket-date label {
+	border-radius: 10px;
+	padding: 10px 0;
+	border: 2px solid white;
+	user-select: none;
+	margin-top: 10px;
+}
+.ticket-date label.active {
+	border: 2px solid #df507a;
+}
+.ticket-date label.active div {
+	color: #df507a;
+}
