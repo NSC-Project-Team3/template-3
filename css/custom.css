@@ -240,11 +240,16 @@
 .thank-user-ticket {
 	display: flex;
 	color: white;
+	background-color: rgb(133, 133, 133);
+	padding: 40px 30px;
+	border-radius: 10px;
+	position: relative;
 }
 .thank-ticket img {
-	height: 400px;
-	width: 270px;
+	width: 200px;
+	height: 277px;
 	object-fit: cover;
+	border-radius: 10px;
 }
 
 .thank-title {
@@ -257,4 +262,54 @@
 }
 .thank-bottom h5 {
 	color: #ff5860;
+}
+
+.ticket-thankyou {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.thank-user-ticket .ticket-radius {
+	width: 60px;
+	height: 50px;
+	background-color: #2b2b31;
+	border-radius: 50%;
+	position: absolute;
+}
+.thank-user-ticket .ticket-radius:nth-child(1) {
+	top: -20px;
+	left: -20px;
+	transform: rotate(-45deg);
+}
+.thank-user-ticket .ticket-radius:nth-child(2) {
+	top: -20px;
+	right: -20px;
+	transform: rotate(45deg);
+}
+.thank-user-ticket .ticket-radius:nth-child(3) {
+	bottom: -20px;
+	left: -20px;
+	transform: rotate(45deg);
+}
+.thank-user-ticket .ticket-radius:nth-child(4) {
+	bottom: -20px;
+	right: -20px;
+	transform: rotate(-45deg);
+}
+.thank-user-ticket::before,
+.thank-user-ticket::after {
+	content: "";
+	width: 200px;
+	height: 50px;
+	background-color: #2b2b31;
+	position: absolute;
+	top: -25px;
+	border-radius: 50%;
+}
+.thank-user-ticket::before {
+	left: 100px;
+}
+.thank-user-ticket::after {
+	right: 100px;
 }
