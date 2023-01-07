@@ -230,8 +230,31 @@
 	color: white;
 	margin-left: 30px;
 }
-.user-detail-title button {
+.user-detail-title button,
+.thank-bottom button {
 	background: #ff5860;
 	outline: none;
 	border: none;
+}
+
+.thank-user-ticket {
+	display: flex;
+	color: white;
+}
+.thank-ticket img {
+	height: 400px;
+	width: 270px;
+	object-fit: cover;
+}
+
+.thank-title {
+	color: #df507a;
+	text-align: center;
+}
+
+.thank-bottom {
+	text-align: center;
+}
+.thank-bottom h5 {
+	color: #ff5860;
 }
