@@ -297,7 +297,7 @@
 	right: -20px;
 	transform: rotate(-45deg);
 }
-.thank-user-ticket::before,
+/* .thank-user-ticket::before,
 .thank-user-ticket::after {
 	content: "";
 	width: 200px;
@@ -312,4 +312,4 @@
 }
 .thank-user-ticket::after {
 	right: 100px;
-}
+} */
