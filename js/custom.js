@@ -48,3 +48,12 @@ addActiveRadio(roomItem);
 
 const itemDate = document.querySelectorAll(".ticket-date label input");
 addActiveRadio(itemDate);
+
+const modalMain = document.querySelector(".modal-login");
+const btnCloseModal = document.querySelector(".modal-main button");
+
+if (modalMain && btnCloseModal) {
+	btnCloseModal.addEventListener("click", () => {
+		modalMain.classList.toggle("active");
+	});
+}

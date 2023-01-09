@@ -230,86 +230,59 @@
 	color: white;
 	margin-left: 30px;
 }
-.user-detail-title button,
-.thank-bottom button {
-	background: #ff5860;
-	outline: none;
-	border: none;
-}
 
-.thank-user-ticket {
-	display: flex;
-	color: white;
-	background-color: rgb(133, 133, 133);
-	padding: 40px 30px;
-	border-radius: 10px;
-	position: relative;
-}
-.thank-ticket img {
-	width: 200px;
-	height: 277px;
+.igm-tets img {
+	width: 500px;
+	height: 550px;
 	object-fit: cover;
 	border-radius: 10px;
 }
 
-.thank-title {
-	color: #df507a;
-	text-align: center;
-}
-
-.thank-bottom {
-	text-align: center;
-}
-.thank-bottom h5 {
-	color: #ff5860;
-}
-
-.ticket-thankyou {
+.modal-login {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.3);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	transition: linear 0.5s;
+	visibility: visible;
+}
+
+.modal-main {
+	background-color: aliceblue;
+	padding: 30px 40px;
+	border-radius: 10px;
 	position: relative;
 }
 
-.thank-user-ticket .ticket-radius {
-	width: 60px;
-	height: 50px;
-	background-color: #2b2b31;
-	border-radius: 50%;
+.modal-main > button {
+	font-size: 24px;
 	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 10px 20px;
 }
-.thank-user-ticket .ticket-radius:nth-child(1) {
-	top: -20px;
-	left: -20px;
-	transform: rotate(-45deg);
+.modal-main-btn {
+	margin-top: 30px;
+	text-align: center;
 }
-.thank-user-ticket .ticket-radius:nth-child(2) {
-	top: -20px;
-	right: -20px;
-	transform: rotate(45deg);
+.modal-main-btn a:nth-child(1) {
+	border: 2px solid #df507a;
+	color: #df507a;
 }
-.thank-user-ticket .ticket-radius:nth-child(3) {
-	bottom: -20px;
-	left: -20px;
-	transform: rotate(45deg);
+.modal-main-btn a:nth-child(2) {
+	background-color: #df507a;
+	color: white;
+	border: 2px solid #df507a;
+	margin-left: 20px;
 }
-.thank-user-ticket .ticket-radius:nth-child(4) {
-	bottom: -20px;
-	right: -20px;
-	transform: rotate(-45deg);
+.modal-main-btn a:hover {
+	box-shadow: 0 0 15px #df507a;
 }
-/* .thank-user-ticket::before,
-.thank-user-ticket::after {
-	content: "";
-	width: 200px;
-	height: 50px;
-	background-color: #2b2b31;
-	position: absolute;
-	top: -25px;
-	border-radius: 50%;
+.modal-login.active {
+	visibility: hidden;
 }
-.thank-user-ticket::before {
-	left: 100px;
-}
-.thank-user-ticket::after {
-	right: 100px;
-} */
